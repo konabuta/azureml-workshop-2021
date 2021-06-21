@@ -1,0 +1,7 @@
+jupyter
+notebook
+lightgbm==3.2.1
+matplotlib
+sklearn-pandas
+azureml-core==1.30.0
+azureml-widgets==1.30.0

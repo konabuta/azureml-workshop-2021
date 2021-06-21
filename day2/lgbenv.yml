@@ -1,0 +1,14 @@
+name: lgbenv
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.6
+  - pip
+  - pip:
+    - jupyter
+    - notebook
+    - lightgbm==3.2.1
+    - matplotlib
+    - pandas
+    - azureml-defaults

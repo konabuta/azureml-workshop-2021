@@ -22,8 +22,8 @@ RUN if [ -f "/tmp/conda-tmp/environment.yml" ]; then /opt/conda/bin/conda env up
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
-COPY ./day2/requirements.txt /day2/
-RUN pip install -r /day2/requirements.txt
+# COPY ./day2/requirements.txt /day2/
+# RUN pip install -r /day2/requirements.txt
 
 COPY ./day2/lgbenv.yml /day2/
 RUN conda env create -f /day2/lgbenv.yml

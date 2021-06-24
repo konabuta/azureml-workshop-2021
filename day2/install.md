@@ -12,6 +12,7 @@ conda env create -f lgbenv.yml
 3. 環境変数をロードします。
 
 ```shell
+conda init bash
 source ~/.bashrc
 ```
 or
@@ -21,6 +22,14 @@ or
 
 ```shell
 conda activate lgbenv
+```
+
+5. (Jupyter/JupyterLab のみ) Jupyer Kernel に登録
+
+
+```shell
+xport env_name="lgbenv"
+ipython kernel install --user --name=$env_name --display-name=$env_name
 ```
 
 ### 注意事項

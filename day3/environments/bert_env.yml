@@ -1,0 +1,23 @@
+name: bert_env
+channels:
+- conda-forge
+dependencies:
+- python=3.6
+- pip
+- pip:
+    - torch==1.8.1
+    - transformers==4.5.1
+    - pytorch_lightning
+    - pandas
+    - numpy
+    - scipy
+    - fugashi
+    - ipadic
+    - scikit-learn
+    - matplotlib
+    - ipywidgets #for notebook (tpdm)
+    - ipykernel # for jupyter kernel
+    - notebook # for jupyter kernel
+    - mecab-python3
+    - japanize-matplotlib
+    - mlflow

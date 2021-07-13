@@ -9,7 +9,7 @@
 install_conda.sh を実行して conda の仮想環境の作成と Jupyter Kernel への登録を実施
 
 ```bash
-cd setup
+cd azureml-workshop-2021/day3/setup/
 ./install_conda.sh # conda 名称と yml ファイル名を入力するプロンプトが現れる
 # bert_env の場合
 # conda 名称 : bert_env
@@ -31,7 +31,7 @@ Livedoor ニュースのデータをダウンロード & 前処理
 ※ 時間がかかるので要注意
 
 ```bash
+cd azureml-workshop-2021/day3/setup/
 conda activate bert_env
-cd setup
 python livedoor-dataprep.py # data フォルダに整形済みの TSV をダウンロード
 ```
